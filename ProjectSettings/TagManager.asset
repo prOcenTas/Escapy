@@ -17,7 +17,7 @@ TagManager:
   - Background
   - Bouncing
   - Enemy
-  - 
+  - Spikes
   - 
   - 
   - 
@@ -58,4 +58,7 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 1137667019
+    locked: 0
+  - name: spikes
+    uniqueID: 1891871539
     locked: 0
