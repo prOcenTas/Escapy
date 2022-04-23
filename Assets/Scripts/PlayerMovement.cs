@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         gravityStart = myRigidbody.gravityScale;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (!isAlive)
         {
@@ -116,6 +116,8 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidbody.velocity = deathState;
+            
+            FindObjectOfType<GameSession>().ProcessDeath();
         }
     }
 }
