@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -40,11 +38,6 @@ public class PlayerMovement : MonoBehaviour
         ClimbLadder();
         Die();
     }
-    
-    // void FixedUpdate() //have to apply force every fixed frame
-    // {
-    //     Run();
-    // }
 
     void OnMove(InputValue value)
     {
