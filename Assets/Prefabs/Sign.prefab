@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 217839272827946589}
   - component: {fileID: 217839272827946591}
   - component: {fileID: 217839272827946584}
-  m_Layer: 6
+  m_Layer: 13
   m_Name: Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -84276275
-  m_SortingLayer: 1
+  m_SortingLayerID: -2118465885
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -5827403293670580263, guid: 868a873fcd724034092427398cf0b066, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -124,4 +124,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   signBox: {fileID: 0}
   signText: {fileID: 0}
-  text: TEST TEXT
+  text: use the ladder to reach the hights but dont forget to watch for the slimes
