@@ -48,6 +48,12 @@ public class GameSession : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
+    public void IncreaseHealth(int add)
+    {
+        playerLives += add;
+        livesText.text = playerLives.ToString();
+    }
+
     void TakeLife()
     {
         playerLives--;

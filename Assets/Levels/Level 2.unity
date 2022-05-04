@@ -188,6 +188,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 217839272827946584, guid: 22b27c94d8fc42a41b7936cac057491e, type: 3}
+      propertyPath: text
+      value: 'TIP: use the ladder to reach the hights but dont forget to watch for
+        the slimes'
+      objectReference: {fileID: 0}
+    - target: {fileID: 217839272827946584, guid: 22b27c94d8fc42a41b7936cac057491e, type: 3}
       propertyPath: signBox
       value: 
       objectReference: {fileID: 2656337685389816390}

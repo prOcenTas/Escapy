@@ -10,11 +10,11 @@ public class Sign : MonoBehaviour
     private void Start()
     {
         signBox.SetActive(false);
-        signText.text = text;
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        signText.text = text;
         if (col.CompareTag("Player"))
         {
             Debug.Log("Player In Range");

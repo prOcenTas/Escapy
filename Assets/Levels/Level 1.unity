@@ -9872,6 +9872,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 217839272827946584, guid: 22b27c94d8fc42a41b7936cac057491e, type: 3}
+      propertyPath: text
+      value: 'TIP: spikes are dangerous and so is the sewage water'
+      objectReference: {fileID: 0}
+    - target: {fileID: 217839272827946584, guid: 22b27c94d8fc42a41b7936cac057491e, type: 3}
       propertyPath: signBox
       value: 
       objectReference: {fileID: 1314448119}
@@ -10023,6 +10027,10 @@ PrefabInstance:
     - target: {fileID: 1036188944479771311, guid: 2b881879fdaa1ee4a90cbc99aa9db6ce, type: 3}
       propertyPath: m_Name
       value: signBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036188944479771311, guid: 2b881879fdaa1ee4a90cbc99aa9db6ce, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b881879fdaa1ee4a90cbc99aa9db6ce, type: 3}
@@ -10237,15 +10245,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199828089335372921, guid: ecb7089459e12d24a8d8c037be46bdff, type: 3}
       propertyPath: orthographic size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5199828089335372934, guid: ecb7089459e12d24a8d8c037be46bdff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.674654
+      value: 27.482958
       objectReference: {fileID: 0}
     - target: {fileID: 5199828089335372934, guid: ecb7089459e12d24a8d8c037be46bdff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8068291
+      value: 0.8654686
       objectReference: {fileID: 0}
     - target: {fileID: 5199828089463974912, guid: ecb7089459e12d24a8d8c037be46bdff, type: 3}
       propertyPath: m_BoundingShape2D
