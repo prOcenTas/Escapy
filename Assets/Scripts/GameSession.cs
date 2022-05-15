@@ -11,6 +11,8 @@ public class GameSession : MonoBehaviour
     [SerializeField] private int score = 0;
     [SerializeField] private TextMeshProUGUI livesText;
     [SerializeField] private TextMeshProUGUI scoreText;
+    
+    private AudioSource coinSound;
     void Awake()
     {
         int numOfGameSessions = FindObjectsOfType<GameSession>().Length;
@@ -28,6 +30,7 @@ public class GameSession : MonoBehaviour
     {
         livesText.text = playerLives.ToString();
         scoreText.text = score.ToString();
+        coinSound = GetComponent<AudioSource>();
     }
 
     public void ProcessDeath()
@@ -44,6 +47,7 @@ public class GameSession : MonoBehaviour
 
     public void IncreaseScore(int add)
     {
+        coinSound.Play();
         score += add;
         scoreText.text = score.ToString();
     }

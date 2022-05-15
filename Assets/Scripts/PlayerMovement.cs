@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private CapsuleCollider2D myBodyCollider;
     private BoxCollider2D myFeetCollider;
     private float gravityStart;
+    private AudioSource footstep;
 
     private bool isAlive = true;
     
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
         gravityStart = myRigidbody.gravityScale;
+        footstep = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -82,6 +84,11 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector2(Math.Sign(myRigidbody.velocity.x), 1f);
         }
+    }
+
+    private void Footstep()
+    {
+        footstep.Play();
     }
     
     private void ClimbLadder()

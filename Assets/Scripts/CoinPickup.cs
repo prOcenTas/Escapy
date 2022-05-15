@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class CoinPickup : MonoBehaviour
 {
-    [SerializeField] private int points = 10;
+    [SerializeField] private int points = 1;
     private bool collected = false;
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "Player" && !collected)
