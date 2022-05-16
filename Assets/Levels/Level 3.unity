@@ -22996,6 +22996,10 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6193627052506327855, guid: f19c2bc07703e484fbc034f920cbb707, type: 3}
+      propertyPath: grassClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a9cd2eed86bb634c9da9b5864798f87, type: 3}
     - target: {fileID: 6936828930133317185, guid: f19c2bc07703e484fbc034f920cbb707, type: 3}
       propertyPath: m_RootOrder
       value: 6
