@@ -10,7 +10,6 @@ ScriptsOnlyBuild:
     - PauseManager
     - PlayerMovement
     - ScenePersist
-    - Sign
     - StartMenu
     Cinemachine.dll:
     - Cinemachine.CinemachineBlenderSettings
