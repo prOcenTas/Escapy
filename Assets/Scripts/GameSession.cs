@@ -11,8 +11,10 @@ public class GameSession : MonoBehaviour
     [SerializeField] private int score = 0;
     [SerializeField] private TextMeshProUGUI livesText;
     [SerializeField] private TextMeshProUGUI scoreText;
+    public AudioClip coins;
+    public AudioClip hp;
     
-    private AudioSource coinSound;
+    private AudioSource audio;
     void Awake()
     {
         int numOfGameSessions = FindObjectsOfType<GameSession>().Length;
@@ -30,7 +32,7 @@ public class GameSession : MonoBehaviour
     {
         livesText.text = playerLives.ToString();
         scoreText.text = score.ToString();
-        coinSound = GetComponent<AudioSource>();
+        audio = GetComponent<AudioSource>();
     }
 
     public void ProcessDeath()
@@ -47,13 +49,16 @@ public class GameSession : MonoBehaviour
 
     public void IncreaseScore(int add)
     {
-        coinSound.Play();
+        audio.clip = coins;
+        audio.Play();
         score += add;
         scoreText.text = score.ToString();
     }
 
     public void IncreaseHealth(int add)
     {
+        audio.clip = hp;
+        audio.Play();
         playerLives += add;
         livesText.text = playerLives.ToString();
     }

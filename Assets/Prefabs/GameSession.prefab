@@ -418,6 +418,8 @@ MonoBehaviour:
   score: 0
   livesText: {fileID: 1614468885}
   scoreText: {fileID: 404735052}
+  coins: {fileID: 8300000, guid: 1947e55de20814ce2b987d128a56d5af, type: 3}
+  hp: {fileID: 8300000, guid: f912a3b57268d48709e9263d5098fd96, type: 3}
 --- !u!82 &3888986168757871298
 AudioSource:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpSpeed = 11.5f;
     [SerializeField] private float climbSpeed = 5f;
     [SerializeField] private Vector2 deathState = new Vector2(0f,10f);
+    public AudioClip grassClip;
+
     
     private Vector2 moveInput;
     private Rigidbody2D myRigidbody;
@@ -15,7 +17,9 @@ public class PlayerMovement : MonoBehaviour
     private CapsuleCollider2D myBodyCollider;
     private BoxCollider2D myFeetCollider;
     private float gravityStart;
-    private AudioSource footstep;
+    private AudioSource audio;
+    
+     
 
     private bool isAlive = true;
     
@@ -26,7 +30,8 @@ public class PlayerMovement : MonoBehaviour
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
         gravityStart = myRigidbody.gravityScale;
-        footstep = GetComponent<AudioSource>();
+        audio = GetComponent<AudioSource>();
+       
     }
 
     void FixedUpdate()
@@ -88,9 +93,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Footstep()
     {
-        footstep.Play();
+        audio.clip = grassClip;
+        audio.Play();
     }
-    
+
     private void ClimbLadder()
     {
         if(!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ladder")))
@@ -116,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidbody.velocity = deathState;
-            
+
             FindObjectOfType<GameSession>().ProcessDeath();
         }
     }
